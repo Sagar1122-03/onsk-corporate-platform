@@ -1,0 +1,91 @@
+<!-- ==================== VIEW 2: PRODUCTS ==================== -->
+    <section id="view-products" class="page-view" aria-labelledby="prod-h1">
+      <div class="container page-header">
+        <h1 class="page-title" id="prod-h1">ONSK OCR Software</h1>
+        <p class="page-subtitle">"Turn Handwritten and Printed Documents Into Digital Data Instantly."</p>
+      </div>
+
+      <div class="container">
+        <!-- Overview Box -->
+        <div class="product-summary-box">
+          <div class="psb-text">
+            <h2>Intelligent Document Processing (IDP)</h2>
+            <p>
+              ONSK OCR is an intelligent document processing solution designed to extract information from handwritten and printed documents and convert it into structured digital text. It helps businesses reduce manual data entry, improve productivity, and simplify document management.
+            </p>
+            <p style="margin-top: 0.75rem; font-size: 0.95rem; color: var(--text-muted);">
+              Need custom integrations with your current banking or ERP stack? Explore our 
+              <a href="/services" class="seo-intext-link">custom product engineering services</a>.
+            </p>
+            <div class="product-enquiry-actions" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-primary" onclick="openEnquiryModal('ONSK OCR Demo Request')">
+                <i data-lucide="play-circle"></i> Get Product Demo
+              </button>
+              <button class="btn btn-outline" onclick="openEnquiryModal('ONSK OCR Product Information')">
+                <i data-lucide="file-text"></i> Request Product Information
+              </button>
+            </div>
+          </div>
+          <div class="psb-tags">
+            <div class="spec-chip"><i data-lucide="check-circle-2"></i> High-Accuracy Neural Parsing</div>
+            <div class="spec-chip"><i data-lucide="check-circle-2"></i> Cheque &amp; Invoice Formats</div>
+            <div class="spec-chip"><i data-lucide="check-circle-2"></i> Multi-language Transliteration</div>
+            <div class="spec-chip"><i data-lucide="check-circle-2"></i> Structured JSON / CSV Exports</div>
+          </div>
+        </div>
+
+        <!-- ==================== VIDEO DEMO SHOWCASE ==================== -->
+        <div class="product-video-showcase">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-subtitle">Real-Time Performance</span>
+            <h2 class="section-title">Watch ONSK OCR in Action</h2>
+            <p class="section-desc">See our neural recognition engine batch process multi-page TIFF and handwritten banking documents at scale.</p>
+          </div>
+
+          <div class="video-mockup-frame">
+            <div class="video-container">
+              <video 
+                id="ocrDemoVideo" 
+                controls 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                preload="metadata"
+                poster="assets/logo.png">
+                <source src="assets/ocr-demo.mp4" type="video/mp4">
+                <source src="ocr-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core OCR Capabilities -->
+        <div class="section-header" style="margin-top: 4.5rem;">
+          <h2 class="section-title">Core OCR Capabilities</h2>
+        </div>
+        <div class="grid-4">
+          <div class="feature-item">
+            <i data-lucide="pen-tool"></i>
+            <h4>1. Handwritten Recognition</h4>
+            <p>Parses cursive, varied stroke weights, and freeform handwriting on notes and applications.</p>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="printer"></i>
+            <h4>2. Printed Text Extraction</h4>
+            <p>High-speed extraction from machine-printed receipts, forms, invoices, and standard documents.</p>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="cpu"></i>
+            <h4>3. Key-Value Extraction</h4>
+            <p>Intelligently categorizes key-value pairs such as payee names, amounts, account numbers, and dates.</p>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="file-image"></i>
+            <h4>4. Multi-Format Ingestion</h4>
+            <p>Processes diverse raster files including PNG, JPG, and multi-page TIFF images.</p>
+          </div>
+        </div>
+      </div>
+    </section>

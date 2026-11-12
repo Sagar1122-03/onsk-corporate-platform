@@ -1,0 +1,57 @@
+<!-- ==================== MODAL ==================== -->
+  <div class="modal-overlay" id="enquiryModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-header">
+        <div class="badge-tag" style="margin-bottom: 0.5rem;"><i data-lucide="mail"></i> Direct Inquiry</div>
+        <h3 id="modalTitle" style="font-size: 1.4rem;">Start Your Project with ONSK</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">Fill out the details below. Our technical or creative leads will get in touch promptly.</p>
+      </div>
+
+      <form id="modalEnquiryForm" class="styled-form">
+        <div class="form-group">
+          <label for="m_fullName">Full Name *</label>
+          <input type="text" id="m_fullName" required placeholder="e.g. Your Name">
+        </div>
+        <div class="form-group">
+          <label for="m_email">Email Address *</label>
+          <input type="email" id="m_email" required placeholder="e.g. demo@example.com">
+        </div>
+        <div class="form-group">
+          <label for="m_service">Select Service / Product *</label>
+          <select id="m_service" required>
+            <optgroup label="Creative &amp; Digital Media">
+              <option value="Graphics Design">Creative: Graphics Design</option>
+              <option value="Video Editing">Creative: Video Editing</option>
+              <option value="Animation">Creative: Animation</option>
+              <option value="AI Ads">Creative: AI Ads</option>
+              <option value="UGC">Creative: UGC (User-Generated Content)</option>
+            </optgroup>
+            <optgroup label="Software &amp; IT Services">
+              <option value="ONSK OCR">Software Product: ONSK OCR</option>
+              <option value="Product Engineering">Service: Product Engineering</option>
+              <option value="Mobile Applications">Service: Mobile Applications</option>
+              <option value="Web Design & Development">Service: Web Design &amp; Development</option>
+              <option value="Cybersecurity Services">Service: Cybersecurity Services</option>
+              <option value="AI Consultation">Service: AI Consultation</option>
+              <option value="Tech Talent">Service: Tech Talent Acquisition</option>
+              <option value="General Inquiry">General Corporate Inquiry</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="m_message">Project Description *</label>
+          <textarea id="m_message" rows="3" required placeholder="Tell us about your project requirements, scope, or timeline..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full" id="m_submitBtn">
+          <span>Submit Enquiry</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+
+        <div id="m_formStatus" class="form-feedback hidden" role="status"></div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,333 @@
+<!-- ==================== VIEW 3: SERVICES ==================== -->
+    <section id="view-services" class="page-view" aria-labelledby="serv-h1">
+      <div class="container page-header">
+        <h1 class="page-title" id="serv-h1">Custom Software Development, BPO &amp; Digital Services</h1>
+        <p class="page-subtitle">Full-stack software engineering, business process outsourcing, cloud cybersecurity, and high-impact digital media creation designed to elevate your enterprise operations.</p>
+      </div>
+
+      <div class="container services-list-wrapper">
+        <div class="services-filter-bar">
+          <button class="filter-btn active" onclick="filterServices('all')">All Services</button>
+          <button class="filter-btn" onclick="filterServices('bpo')">BPO &amp; Operations</button>
+          <button class="filter-btn" onclick="filterServices('creative')">Creative &amp; Media</button>
+          <button class="filter-btn" onclick="filterServices('engineering')">IT Services</button>
+          <button class="filter-btn" onclick="filterServices('security')">Cloud &amp; Security</button>
+          <button class="filter-btn" onclick="filterServices('consulting')">AI &amp; Performance</button>
+        </div>
+
+        <!-- BPO & Operations Services -->
+        <div class="service-category" data-cat="bpo">
+          <h2 class="category-heading"><i data-lucide="briefcase"></i> BPO &amp; Business Process Outsourcing</h2>
+          <div class="services-grid">
+            <article class="service-card" data-service="BPO Services">
+              <div class="sc-icon"><i data-lucide="headset"></i></div>
+              <h3>BPO (Business Process Outsourcing)</h3>
+              <p>Reliable back-office operations, data processing, customer support, and document management services tailored to your business needs.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('BPO Services')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Our BPO support includes document and form processing, data entry and verification, digital transcription, customer assistance, and dedicated back-office operations aligned with your workflows and service requirements.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Creative & Digital Media Services -->
+        <div class="service-category" data-cat="creative">
+          <h2 class="category-heading"><i data-lucide="palette"></i> Creative &amp; Digital Media Services</h2>
+          <div class="services-grid">
+            <!-- 1. Graphics Design -->
+            <article class="service-card" data-service="Graphics Design">
+              <div class="sc-icon"><i data-lucide="palette"></i></div>
+              <h3>Graphics Design</h3>
+              <p>Impactful brand identities, social media visual systems, marketing collaterals, and high-converting UI/UX design assets tailored for modern audiences.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Graphics Design')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Complete branding packages: logo identity design, typography guidelines, vector assets, pitch decks, product mockups, and responsive web/mobile interface prototypes in Figma.</p>
+              </div>
+            </article>
+
+            <!-- 2. Video Editing -->
+            <article class="service-card" data-service="Video Editing">
+              <div class="sc-icon"><i data-lucide="film"></i></div>
+              <h3>Video Editing</h3>
+              <p>Professional video editing, dynamic cuts, color grading, and audio mastering engineered for corporate promotions, commercials, and social media reels.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Video Editing')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Multi-cam sequence editing, cinematic color correction, motion titles, subtitling, background score mixing, and format exports optimized for YouTube, Instagram Reels, and LinkedIn.</p>
+              </div>
+            </article>
+
+            <!-- 3. Animation -->
+            <article class="service-card" data-service="Animation">
+              <div class="sc-icon"><i data-lucide="play-square"></i></div>
+              <h3>Animation</h3>
+              <p>Captivating 2D motion graphics, 3D animated visual assets, and explainer animations that translate intricate concepts into clear, engaging visual narratives.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Animation')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Product explainer videos, animated logo reveals, interactive web SVG/Lottie micro-interactions, isometric 3D illustrations, and character-driven commercial motion sequences.</p>
+              </div>
+            </article>
+
+            <!-- 4. AI Ads -->
+            <article class="service-card" data-service="AI Ads">
+              <div class="sc-icon"><i data-lucide="sparkles"></i></div>
+              <h3>AI Ads</h3>
+              <p>High-conversion commercial advertisements generated and optimized with cutting-edge AI creative pipelines, hyper-personalized messaging, and algorithmic A/B testing.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('AI Ads')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Algorithmic visual generation, synthetic voiceover narration, prompt-engineered video hooks, rapid ad iteration for Google/Meta campaigns, and conversion rate optimization.</p>
+              </div>
+            </article>
+
+            <!-- 5. UGC -->
+            <article class="service-card" data-service="UGC (User-Generated Content)">
+              <div class="sc-icon"><i data-lucide="video"></i></div>
+              <h3>UGC (User-Generated Content)</h3>
+              <p>Authentic, relatable creator-led videos and testimonial content built to build organic trust, brand credibility, and high conversion across digital ad campaigns.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('UGC')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Native mobile video formats, hook-driven storytelling, unboxing demos, product reviews, and creator management crafted specifically for TikTok, Instagram Reels, and YouTube Shorts.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Tech Talent -->
+        <div class="service-category" data-cat="engineering">
+          <h2 class="category-heading"><i data-lucide="code-2"></i> IT Services</h2>
+          <div class="services-grid">
+            <article class="service-card" data-service="Tech Talent & Dedicated Engineers">
+              <div class="sc-icon"><i data-lucide="user-check"></i></div>
+              <h3>Tech Talent</h3>
+              <p>Provide skilled technology professionals and technical expertise to help businesses accelerate development and digital transformation.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Tech Talent')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Augment your internal teams with vetted engineers and creative leads ready for agile sprint delivery.</p>
+              </div>
+            </article>
+            <article class="service-card" data-service="Data Analyst Services">
+              <div class="sc-icon"><i data-lucide="bar-chart-3"></i></div>
+              <h3>Data Analyst</h3>
+              <p>Turn business data into clear insights through data cleaning, analysis, reporting, and interactive dashboards.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Data Analyst Services')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>We help organize and analyze data, track key performance indicators, and present findings in actionable reports and dashboards.</p>
+              </div>
+            </article>
+            <article class="service-card" data-service="Business Analyst Services">
+              <div class="sc-icon"><i data-lucide="clipboard-list"></i></div>
+              <h3>Business Analyst</h3>
+              <p>Clarify business needs and improve workflows with structured requirements gathering and process analysis.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Business Analyst Services')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>We work with stakeholders to document requirements, map current processes, identify gaps, and define practical solution needs.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Software Development -->
+        <div class="service-category" data-cat="engineering">
+          <h2 class="category-heading"><i data-lucide="code-2"></i> Software &amp; Development Services</h2>
+          <div class="services-grid">
+            <article class="service-card" data-service="Product Engineering">
+              <div class="sc-icon"><i data-lucide="cpu"></i></div>
+              <h3>Product Engineering</h3>
+              <p>Translating conceptual software ideas into production-ready web and enterprise cloud platforms with modular architectures.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Product Engineering')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>
+                  Modular microservice architecture, API design, high-throughput caching, database schemas, and custom integrations with our 
+                  <a href="/products" class="seo-intext-link">proprietary ONSK OCR engine</a>.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Mobile Applications">
+              <div class="sc-icon"><i data-lucide="smartphone"></i></div>
+              <h3>Mobile Applications</h3>
+              <p>Native and cross-platform mobile apps for iOS and Android delivering responsive, fluid user interfaces.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Mobile Applications')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Seamless offline-first sync, camera document capture integration, biometric logins, and native mobile payment flows.</p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Web Design & Development">
+              <div class="sc-icon"><i data-lucide="globe"></i></div>
+              <h3>Web Design &amp; Development</h3>
+              <p>Bespoke web applications and responsive corporate portals engineered with clean code, SEO hygiene, and optimal UX.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Web Design & Development')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Engineered using semantic HTML5, modern component layouts, RESTful Node.js backends, and full WCAG accessibility compliance.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Security & Infrastructure -->
+        <div class="service-category" data-cat="security">
+          <h2 class="category-heading"><i data-lucide="shield"></i> Security &amp; Infrastructure Services</h2>
+          <div class="services-grid">
+            <article class="service-card" data-service="Cybersecurity Services">
+              <div class="sc-icon"><i data-lucide="lock"></i></div>
+              <h3>Cybersecurity Services</h3>
+              <p>Vulnerability auditing, penetration testing, endpoint security, and compliance protocols to safeguard proprietary corporate data.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Cybersecurity Services')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>OWASP Top 10 hardening, continuous encrypted backups, zero-trust network policies, and identity access controls.</p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Business Continuity & Recovery">
+              <div class="sc-icon"><i data-lucide="refresh-cw"></i></div>
+              <h3>Business Continuity &amp; Recovery</h3>
+              <p>Robust disaster recovery planning, redundant automated cluster snapshots, and failover architectures for business uptime.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Business Continuity & Recovery')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Point-in-time recovery configurations, multi-zone MongoDB database clustering, and automatic instant failover drills.</p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Managed Hosting Services">
+              <div class="sc-icon"><i data-lucide="server"></i></div>
+              <h3>Managed Hosting Services</h3>
+              <p>Configuring, hardening, and maintaining cloud compute instances, container runtimes, and databases.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Managed Hosting Services')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Linux VPS server optimization, DDoS filtering, automated SSL renewals, and 24/7 uptime health telemetry.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- AI & Performance Consulting -->
+        <div class="service-category" data-cat="consulting">
+          <h2 class="category-heading"><i data-lucide="brain"></i> AI &amp; Performance Consulting</h2>
+          <div class="services-grid">
+            <article class="service-card" data-service="AI Consultation">
+              <div class="sc-icon"><i data-lucide="sparkles"></i></div>
+              <h3>AI Consultation</h3>
+              <p>Advising enterprises on intelligent automation, machine learning feasibility, computer vision pipelines, and practical LLM workflows.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('AI Consultation')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>
+                  Assess document automation feasibility and discover the capabilities of our 
+                  <a href="/products" class="seo-intext-link">intelligent OCR solutions</a>.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Page Speed Optimization">
+              <div class="sc-icon"><i data-lucide="zap"></i></div>
+              <h3>Page Speed Optimization</h3>
+              <p>Refining Core Web Vitals, payload compression, asset caching, and database query optimization for sub-second loads.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Page Speed Optimization')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Eliminating render-blocking assets, WebP/AVIF compression, Gzip headers, and CDN cache edge delivery.</p>
+              </div>
+            </article>
+
+            <article class="service-card" data-service="Technical SEO & Troubleshooting">
+              <div class="sc-icon"><i data-lucide="search"></i></div>
+              <h3>Technical SEO &amp; Troubleshooting</h3>
+              <p>Eliminating crawl errors, implementing structured schema markup, and diagnosing deep runtime issues.</p>
+              <div class="sc-actions">
+                <button class="learn-more-btn" aria-expanded="false">
+                  <span>Learn More</span> <i data-lucide="chevron-down"></i>
+                </button>
+                <button class="sc-enquire-btn" onclick="openEnquiryModal('Technical SEO')">Enquire Now</button>
+              </div>
+              <div class="sc-expanded-content">
+                <p>Complete JSON-LD Schema integration, canonical link management, XML sitemaps, and search bot indexing optimization.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
